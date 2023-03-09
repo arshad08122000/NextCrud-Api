@@ -54,7 +54,7 @@ export async function createuser(req,res)
 {
  try{
    const presentuser=req.body;
-   console.log(presentuser);
+   console.log("User : ",presentuser);
    const status=await users.create(presentuser);
    if(status)
    {
